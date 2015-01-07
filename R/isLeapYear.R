@@ -4,12 +4,12 @@
 ## isLeapYear function definition.
 
 # Function input: year
+# Accepted class is numeric, where decimal values are converted to integers for leap year calculation.
 # Function outputs:
 # 'TRUE' if year is a leap year.
 # 'FALSE' if year is not a leap year.
 # '"year" is out of the valid range' if year is not within Gregorian calendar range.
-# 'error: argument of class numeric with integer value expected' if year is not a whole numeric value.
-# Adjusted from specified condition of numeric values, to only accept whole years. 
+# 'error: argument of class numeric expected' if year is not a numeric value.
 
 isLeapYear <- function(year) {
      # Assign result of nested ifelse statements to 'result' variable. 
@@ -26,7 +26,7 @@ isLeapYear <- function(year) {
                                sprintf('%d is out of the valid range', year)),
                        # if false:
                        # assign string reporting error that input value of function is not a number. 
-                       'error: argument of class numeric with integer value expected')
+                       'error: argument of class numeric expected')
      # return result of iselse statements.
      return(result)
 }
