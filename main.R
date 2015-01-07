@@ -3,7 +3,7 @@
 
 ## Source functions
 
-source('R\isLeapYear.R')
+source('R/isLeapYear.R')
 
 ## Commands
 
